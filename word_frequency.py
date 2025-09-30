@@ -34,4 +34,21 @@ user_sentence = input("Enter a sentence: ")
 while (is_sentence(user_sentence) == False):
     print("This does not meet the criteria for a sentence.")
     user_input = input("Enter a sentence: ")
+
+trans = str.maketrans("", "", string.punctuation)
+words = user_sentence.lower().translate(trans).split()
+
+w_list = []
+f_list = []
+
+for w in words:
+    if w in w_list:
+        idx = w_list.index(w)
+        f_list[idx] += 1
+    else:
+        w_list.append(w)
+        f_list.append(1)
+
+for i in range(len(w_list)):
+    print(f"{w_list[i]}: {f_list[i]"}
     

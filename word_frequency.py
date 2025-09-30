@@ -50,5 +50,5 @@ for w in words:
         f_list.append(1)
 
 for i in range(len(w_list)):
-    print(f"{w_list[i]}: {f_list[i]"}
+    print(f"{w_list[i]}: {f_list[i]"})
     

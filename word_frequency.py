@@ -8,6 +8,7 @@
 # 4. Iterate through words and update frequencies
 
 import re
+import string
 
 #This is a function that checks if a text qualifies as a sentence. You do not need to modify this!
 def is_sentence(text):
@@ -50,5 +51,5 @@ for w in words:
         f_list.append(1)
 
 for i in range(len(w_list)):
-    print(f"{w_list[i]}: {f_list[i]"})
+    print(f"{w_list[i]}: {f_list[i]}")
     
